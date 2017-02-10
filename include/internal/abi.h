@@ -480,6 +480,7 @@ CILK_ABI(void) __cilkrts_leave_frame(__cilkrts_stack_frame *sf);
  */
 CILK_ABI(void) __cilkrts_suspend(void);
 
+// These are not really part of the ABI, but the API. Should be moved.
 CILK_ABI(void*) __cilkrts_get_deque(void);
 CILK_ABI(void) __cilkrts_suspend_deque(void);
 CILK_ABI(void) __cilkrts_resume_suspended(void*, int);
